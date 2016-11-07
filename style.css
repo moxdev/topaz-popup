@@ -3544,8 +3544,7 @@ html[xmlns] .slides {display: block;}
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 2em;
-  font-size: .9em;
-  /*margin-bottom: -3em;*/
+  margin-bottom: 2em;
 }
 
 .home-modal svg {
@@ -3554,56 +3553,72 @@ html[xmlns] .slides {display: block;}
 
 .home-modal h1 {
   font-family: 'bebas_neueregular';
-  font-size: 2em;
+  font-size: 96px;
   color: #ffc83b;
+  margin: 0;
 }
 
 .home-modal p {
   font-family: 'open_sanssemibold';
   color: #fff;
+  font-size: 31px;
+  margin: 0 .3em .5em;
 }
 
 .home-modal h4 {
 	font-family: 'open_sanslight';
 	color: #fff;
-}
+	font-size: 14px;
 
-.home-modal div div > div {
-  /*padding-bottom: 2em;*/
-}
-
-.home-modal div  div > div:before, .home-modal div div > div:after {
-  content: "";
-  display: table;
-}
-
-.home-modal div div > div:after {
-  clear: both;
 }
 
 .home-modal .modal-footer {
   background-color: #c8c8ca;
-  /*text-align:right;*/
-  padding:3.5em 1.5em;
+  padding-bottom:1em;
 }
 
+.home-modal form {
+	display: inline-block;
+	width: 85%;
+}
+
+.home-modal form input[type="text"],
+.home-modal form input[type="email"],
+.home-modal form input[type="tel"] {
+	border: none;
+	color: #fff;
+	border-radius: 0;
+	height: 35px;
+}
+.home-modal form input[type="submit"] {
+	border: none;
+	border-radius: 0;
+}
 .home-modal #request-header {
 	text-align: left;
+	font-size:28px;
 	color:#41414c;
+	margin-left: 42px;
 }
-
-.home-modal .modal-footer .buttonHolder {
-	text-align: center;
-}
-
 .home-modal label {
 	text-transform: uppercase;
 	font-family: 'GandhiSans-Bold';
 	color:#41414c;
+	font-size: 14px;
+	margin-bottom: 10px;
 }
+.home-modal .modal-footer .buttonHolder {
+	text-align: center;
+}
+
 .home-modal .modal-footer .buttonHolder #submit-request {
 	background-color: #ffc83b;
 	color:#41414c;
+	width: 100%;
+	font-family:'bebas_neueregular';
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 20px;
 }
 
 .home-modal .modal-footer .equal-housing {
