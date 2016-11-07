@@ -335,6 +335,14 @@ th {
 	font-style: normal;
 }
 
+@font-face {
+  font-family: 'GandhiSans-Bold';
+  src: url('fonts/GandhiSans-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/GandhiSans-Bold.otf')  format('opentype'),
+	     url('fonts/GandhiSans-Bold.woff') format('woff'), url('fonts/GandhiSans-Bold.ttf')  format('truetype'), url('fonts/GandhiSans-Bold.svg#GandhiSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 button,
 input,
@@ -3523,12 +3531,12 @@ html[xmlns] .slides {display: block;}
   max-width: 600px;
   margin:10% auto;
   background-color: #41414c;
-  background-size: 75% auto;
-  background-position: right top;
+  /*background-size: 75% auto;*/
+  /*background-position: right top;*/
   background-repeat: no-repeat;
   color: #FFF;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
   box-shadow: 0 0 7px 7px rgba(0, 0, 0, .2);
 }
 
@@ -3574,9 +3582,36 @@ html[xmlns] .slides {display: block;}
 }
 
 .home-modal .modal-footer {
-  background-color: #7D7C7D;
+  background-color: #c8c8ca;
   /*text-align:right;*/
   padding:3.5em 1.5em;
+}
+
+.home-modal #request-header {
+	text-align: left;
+	color:#41414c;
+}
+
+.home-modal .modal-footer .buttonHolder {
+	text-align: center;
+}
+
+.home-modal label {
+	text-transform: uppercase;
+	font-family: 'GandhiSans-Bold';
+	color:#41414c;
+}
+.home-modal .modal-footer .buttonHolder #submit-request {
+	background-color: #ffc83b;
+	color:#41414c;
+}
+
+.home-modal .modal-footer .equal-housing {
+	text-align: right;
+}
+
+.home-modal .modal-footer .equal-housing svg {
+	width: 5%;
 }
 
 .home-modal .close-modal {
