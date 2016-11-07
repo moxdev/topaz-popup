@@ -13,7 +13,7 @@
 
 			</div><!-- .wrapper -->
 		</div><!-- #content -->
-	
+
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<nav id="colophon-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'menu_id' => 'footer-menu', 'container' => '' ) ); ?>
@@ -38,7 +38,7 @@
 						</g>
 						<g id="text">
 							<g id="text_1_">
-								<polygon fill="#41414C" points="5.3,39.5 5.3,43.7 7.9,43.7 7.9,42.9 6.1,42.9 6.1,41.9 7.7,41.9 7.7,41.2 6.1,41.2 6.1,40.3 
+								<polygon fill="#41414C" points="5.3,39.5 5.3,43.7 7.9,43.7 7.9,42.9 6.1,42.9 6.1,41.9 7.7,41.9 7.7,41.2 6.1,41.2 6.1,40.3
 									7.8,40.3 7.8,39.5 		"/>
 								<g>
 									<path fill="#41414C" d="M11.1,40c-0.3-0.3-0.7-0.6-1.1-0.6c-0.4,0-0.8,0.1-1.1,0.4c-0.3,0.4-0.6,1-0.6,1.8c0,0.8,0.2,1.3,0.6,1.8
@@ -52,7 +52,7 @@
 								</g>
 								<path fill="#41414C" d="M16.2,43.7l0.2-0.9h1.3l0.2,0.9h0.8l-1.2-4.2h-0.8l-1.2,4.2H16.2z M17.5,42.2h-0.9l0.4-1.7L17.5,42.2z"/>
 								<polygon fill="#41414C" points="19.2,43.7 19.2,39.5 20,39.5 20,42.9 21.6,42.9 21.6,43.7 		"/>
-								<polygon fill="#41414C" points="24.2,43.7 23.5,43.7 23.5,39.5 24.2,39.5 24.2,41.2 25.6,41.2 25.6,39.5 26.3,39.5 26.3,43.7 
+								<polygon fill="#41414C" points="24.2,43.7 23.5,43.7 23.5,39.5 24.2,39.5 24.2,41.2 25.6,41.2 25.6,39.5 26.3,39.5 26.3,43.7
 									25.6,43.7 25.6,41.8 24.2,41.8 		"/>
 								<g>
 									<path fill="#41414C" d="M29.6,39.8c-0.2-0.3-0.7-0.4-1.1-0.4c-0.4,0-0.9,0.1-1.1,0.4c-0.3,0.4-0.6,1-0.6,1.8
@@ -70,7 +70,7 @@
 										C34.1,43.3,34,42.9,34,42.5"/>
 								</g>
 								<rect x="37.3" y="39.5" fill="#41414C" width="0.8" height="4.2"/>
-								<polygon fill="#41414C" points="38.7,43.7 38.7,39.5 39.5,39.5 40.8,42.5 40.8,39.5 41.5,39.5 41.5,43.7 40.8,43.7 39.4,40.7 
+								<polygon fill="#41414C" points="38.7,43.7 38.7,39.5 39.5,39.5 40.8,42.5 40.8,39.5 41.5,39.5 41.5,43.7 40.8,43.7 39.4,40.7
 									39.4,43.7 		"/>
 								<g>
 									<path fill="#41414C" d="M45.3,40.8h-0.7c0-0.3-0.2-0.4-0.4-0.6c-0.1-0.1-0.2-0.1-0.4-0.1c-0.3,0-0.6,0.1-0.7,0.3
@@ -103,7 +103,7 @@
 										c0.1-0.1,0.1-0.3,0.1-0.7v-2.5h0.9v2.5c0,0.4-0.1,0.8-0.2,1c-0.2,0.4-0.8,0.7-1.4,0.7c-0.7,0-1.2-0.2-1.4-0.7
 										C29.2,48.5,29.2,48.1,29.2,47.7"/>
 								</g>
-								<polygon fill="#41414C" points="35.9,45.1 35.9,48 34.2,45.1 33.3,45.1 33.3,49.2 34.1,49.2 34.1,46.4 35.8,49.2 36.6,49.2 
+								<polygon fill="#41414C" points="35.9,45.1 35.9,48 34.2,45.1 33.3,45.1 33.3,49.2 34.1,49.2 34.1,46.4 35.8,49.2 36.6,49.2
 									36.6,45.1 		"/>
 								<rect x="37.4" y="45.1" fill="#41414C" width="0.9" height="4.1"/>
 								<polygon fill="#41414C" points="38.7,45.1 38.7,45.9 40,45.9 40,49.2 40.8,49.2 40.8,45.9 42.1,45.9 42.1,45.1 		"/>
@@ -182,7 +182,7 @@ Leasing Office Hours: Monday - Saturday 10am - 4pm</div><!-- .site-info -->
 											c0-0.5-0.3-0.7-0.7-0.7h-1v2.3h0.3v-0.9h0.5l0.5,0.9H20l-0.5-0.9C19.9,10.4,20.1,10.1,20.1,9.8"/>
 										<path fill="#41414C" d="M23.1,11.4l-0.8-1.5l0.7-0.8h-0.4l-0.7,0.8c-0.1,0.1-0.2,0.3-0.3,0.3c0-0.1,0-0.3,0-0.4V9.1h-0.3v2.3
 											h0.3v-0.7l0.4-0.5l0.7,1.2H23.1z"/>
-										<polygon fill="#41414C" points="25.7,11.4 25.7,11 24.5,11 24.5,10.3 25.2,10.3 25.2,10 24.5,10 24.5,9.4 25.6,9.4 25.6,9.1 
+										<polygon fill="#41414C" points="25.7,11.4 25.7,11 24.5,11 24.5,10.3 25.2,10.3 25.2,10 24.5,10 24.5,9.4 25.6,9.4 25.6,9.1
 											24.2,9.1 24.2,11.4 					"/>
 										<polygon fill="#41414C" points="28.3,9.4 28.3,9.1 26.7,9.1 26.7,9.4 27.3,9.4 27.3,11.4 27.7,11.4 27.7,9.4 					"/>
 										<rect x="29.5" y="9.1" fill="#41414C" width="0.3" height="2.3"/>
@@ -221,6 +221,27 @@ Leasing Office Hours: Monday - Saturday 10am - 4pm</div><!-- .site-info -->
 	</div><!-- #translate-wrap -->
 </div><!-- #page -->
 
+<!-- Pop-up Modal -->
+<div class="home-modal">
+    <div>
+    	<a href="#" class="close-modal">X</a>
+      	<div>
+      		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 206.75 89.21"><defs><clipPath id="clip-path" transform="translate(0 0)"><rect width="206.75" height="89.21" style="fill:none"/></clipPath></defs><title>Topaz House</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g style="clip-path:url(#clip-path)"><path d="M8.33,85.39c0,1.49,0,2.52,1.39,3.33v.08H4.43v-.08c1.34-.5,1.18-2.41,1.18-3.59V73.44H3.26a4.69,4.69,0,0,0-3.18,1H0l.93-3.12H1a4.13,4.13,0,0,0,1,.19H12.66a3,3,0,0,0,1.23-.19H14l-.86,3.12H13c-.35-.92-1.41-1-2.3-1H8.33Z" transform="translate(0 0)" style="fill:#fff"/><path d="M16.93,79.88c0,3.67,2.64,7.44,6.83,7.44s6.65-2.91,6.65-6.81S27.93,73,23.71,73a6.51,6.51,0,0,0-6.78,6.89m16.53.1c0,5.34-4.51,9.22-9.83,9.22s-9.74-3.72-9.74-9.09c0-5,4.4-9.14,10-9,5.61,0,9.56,4.17,9.56,8.88" transform="translate(0 0)" style="fill:#fff"/><path d="M41.78,71.55c3.47,0,6.11,1.65,6.11,4.59S45,81.06,42,81.06a4.54,4.54,0,0,1-1.95-.36c2.3-.13,4.78-1.52,4.78-4,0-2.31-1.66-3.22-3.79-3.22a11.09,11.09,0,0,0-1.87.16V85.41c0,1.47,0,2.51,1.39,3.3v.08H35.27v-.08c1.36-.47,1.2-2.41,1.2-3.59V75.25c0-1.18.16-3.09-1.17-3.62v-.08Z" transform="translate(0 0)" style="fill:#fff"/><path d="M55.77,73.78l-2.64,6.6h5.26Zm-3.34,8.54L51,86c-.56,1.47-.75,2.23.53,2.7v.08H46.67v-.08c1.55-.76,2-2.23,2.59-3.72l4.46-10.93c.37-.94.88-2-.4-2.44v-.08h4.22L63.09,85c.61,1.49,1.09,3,2.62,3.72v.08H60.23v-.08c1.31-.58,1.09-.86.37-2.7l-1.44-3.69Z" transform="translate(0 0)" style="fill:#fff"/><path d="M66,88.79,75.67,73.7l-4.54-.26a5.8,5.8,0,0,0-4,1.13H67l1.36-3H80.2l-9.61,15,5.61.31a9.21,9.21,0,0,0,5.29-1.44h.08l-1.49,3.33Z" transform="translate(0 0)" style="fill:#fff"/><path d="M126,80.38v4.74c0,1.18-.16,3.09,1.18,3.59v.08h-5.07v-.08c1.33-.5,1.17-2.41,1.17-3.59V75.22c0-1.18.19-3.09-1.17-3.59v-.08h5.07v.08c-1.34.5-1.18,2.41-1.18,3.62V78.5h9.64V75.25c0-1.21.19-3.12-1.18-3.62v-.08h5.1v.08c-1.36.5-1.2,2.41-1.2,3.59v9.91c0,1.18-.16,3.09,1.2,3.59v.08h-5.1v-.08c1.36-.5,1.18-2.41,1.18-3.59V80.38Z" transform="translate(0 0)" style="fill:#fff"/><path d="M144.09,79.88c0,3.67,2.64,7.44,6.83,7.44s6.65-2.91,6.65-6.81S155.09,73,150.87,73a6.51,6.51,0,0,0-6.78,6.89m16.53.1c0,5.34-4.51,9.22-9.83,9.22S141,85.49,141,80.12c0-5,4.4-9.14,10-9,5.61,0,9.56,4.17,9.56,8.88" transform="translate(0 0)" style="fill:#fff"/><path d="M174.5,87.06a6.7,6.7,0,0,1-5.23,2.15,6.63,6.63,0,0,1-4.83-1.83c-1.42-1.52-1.36-3.28-1.36-5.16v-7c0-1.18.19-3.09-1.18-3.59v-.08H167v.08c-1.34.5-1.18,2.41-1.18,3.59v7c0,3.48,1.49,5.11,4.25,5.11a4.75,4.75,0,0,0,3.9-1.83,3.4,3.4,0,0,0,.56-2.38V75.22c0-1.18.16-3.09-1.17-3.59v-.08h5.07l0,.08c-1.36.5-1.2,2.41-1.2,3.62v9.88c0,1.18-.16,3.09,1.2,3.59v.08H174.5Z" transform="translate(0 0)" style="fill:#fff"/><path d="M190.84,74.67A6.14,6.14,0,0,0,186.65,73c-1.52,0-3.44.58-3.44,2.39,0,3.59,9.18,3.54,9.18,8.38,0,2.81-3,5.42-7.15,5.42a14,14,0,0,1-4.78-.79l-.77-3.28a9.34,9.34,0,0,0,5.85,2.17c1.52,0,3.82-.89,3.82-2.73,0-4.09-9.18-3.35-9.18-8.91,0-3.3,3.44-4.56,6.7-4.56a13.65,13.65,0,0,1,4,.58Z" transform="translate(0 0)" style="fill:#fff"/><path d="M198.34,86.59l3.39.31a6.73,6.73,0,0,0,4.94-1.55h.08l-1.2,3.43H194.42v-.08c1.36-.47,1.2-2.41,1.2-3.59V75.25c0-1.21.16-3.12-1.2-3.62v-.08H203a2.79,2.79,0,0,0,1.25-.13h.08v3.06h-.08a3.78,3.78,0,0,0-3.15-1,15.37,15.37,0,0,0-2.72.18V78.5h3.18a2.78,2.78,0,0,0,1.17-.16h.08v2.78h-.08c-.43-.76-1.55-.73-2.38-.73h-2Z" transform="translate(0 0)" style="fill:#fff"/></g><polygon points="101.41 0 33.63 66.53 33.65 66.55 75.94 66.55 75.92 66.53 101.41 41.5 126.91 66.53 126.89 66.55 169.18 66.55 169.2 66.53 101.41 0" style="fill:#9496a1"/><path d="M87.6,66.53,101.41,53l13.81,13.56L101.41,80.08Zm13.82-18.3L82.76,66.53l18.65,18.3,18.65-18.3Z" transform="translate(0 0)" style="fill:#9496a1"/><polygon points="101.41 76.64 91.11 66.53 101.41 56.41 111.72 66.53 101.41 76.64" style="fill:#9496a1"/></g></g></svg>
+
+        	<h1>special offer what!</h1> <!-- baba -->
+
+        	<p>Specials on select apartments with a 1 year lease!</p> <!-- opensansbold -->
+
+        	<p>Call our Leasing Team today for your personal tour! 1.888.771.0216</p> <!-- opensansbold -->
+
+        	<h4>*Restrictions Apply. Contact leasing office for further information.</h4> <!-- opensanslight-->
+      	</div>
+      	<div class="modal-footer">
+      	</div>
+    </div>
+</div>
+<!-- Pop-up Modal -->
+
 <?php wp_footer(); ?>
 <?php if(is_page_template('frontpage.php')) { ?>
 <script>
@@ -246,7 +267,7 @@ jQuery(window).load(function() {
 		slideshow: false,
 		itemWidth: 250,
 		nextText: "",
-		prevText: "",  
+		prevText: "",
 		asNavFor: '#slider'
 	});
 	jQuery('#slider').flexslider({
@@ -267,15 +288,15 @@ jQuery(window).load(function() {
      var callback = function(formatted_number, mobile_number) {
        var e = jQuery('.googlenumber');
 for(var i=0; i<e.length;i++)
-   { e[i].href = "tel:" + mobile_number; 
+   { e[i].href = "tel:" + mobile_number;
        e[i].innerHTML = ""
        e[i].appendChild(document.createTextNode(formatted_number));}
      };
      window.onload=function() {_googWcmGet(callback,'1-888-771-0216');};
-</script> 
+</script>
 
 
-<!-- Google Code for Remarketing Tag -->
+<!-- <!-- Google Code for Remarketing Tag -->
 <!--------------------------------------------------
 Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
 --------------------------------------------------->

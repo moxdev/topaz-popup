@@ -113,7 +113,7 @@ function topaz_house_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => __( 'Blog Sidebar', 'topaz_house' ),
 		'id'            => 'sidebar-blog',
@@ -125,14 +125,14 @@ function topaz_house_widgets_init() {
 }
 add_action( 'widgets_init', 'topaz_house_widgets_init' );
 
-function register_jquery()  {  
-	if (!is_admin()) {  
-		wp_deregister_script('jquery');  
-        // Load the copy of jQuery that comes with WordPress  
-        // The last parameter set to TRUE states that it should be loaded in the footer.  
-        wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, '1.11.2', TRUE);  
-    }  
-}  
+function register_jquery()  {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+        // Load the copy of jQuery that comes with WordPress
+        // The last parameter set to TRUE states that it should be loaded in the footer.
+        wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, '1.11.2', TRUE);
+    }
+}
 add_action('init', 'register_jquery');
 
 /**
@@ -140,41 +140,41 @@ add_action('init', 'register_jquery');
  */
 function topaz_house_scripts() {
 	wp_enqueue_style( 'topaz-house-style', get_stylesheet_uri() );
-	
+
 	wp_enqueue_script( 'jquery');
 
 	wp_enqueue_script( 'topaz-house-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20120206', true );
 	wp_enqueue_script( 'topaz-house-modernizr', get_template_directory_uri() . '/js/modernizr.custom.80561.js', array(), '20150827', true );
-	
-	if(has_post_thumbnail() || is_page_template('frontpage.php')) { 
+
+	if(has_post_thumbnail() || is_page_template('frontpage.php')) {
 		wp_enqueue_script( 'topaz-house-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array('jquery'), '20150826', true );
 		wp_enqueue_script( 'topaz-house-image-fill', get_template_directory_uri() . '/js/jquery-imagefill.min.js', array('jquery'), '20150826', true );
 	}
-	
+
 	if(is_page_template('frontpage.php')) {
 		wp_enqueue_script( 'topaz-house-home-scripts', get_template_directory_uri() . '/js/home.js', array('jquery'), '20150826', true );
 	}
-	
+
 	if(is_page_template('page-photo-gallery.php')) {
 		wp_enqueue_script( 'topaz-house-flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '20141118', true );
 	}
-	
+
 	if(is_page_template('page-contact.php') || is_page_template('page-area-map.php')) {
 		wp_enqueue_script( 'topaz-house-google-map-api', 'http://maps.google.com/maps/api/js?sensor=false', array(), '', true );
 	}
-	
+
 	if(is_page_template('page-area-map.php')) {
 		wp_enqueue_script( 'topaz-house-area-map-spider-markers', get_template_directory_uri() . '/js/oms.min.js', array(), '20150109', true );
 		wp_enqueue_script( 'topaz-house-area-map', get_template_directory_uri() . '/js/area-map.js', array('jquery'), '2015082815', true );
 	}
-	
+
 	if(is_page_template('page-contact.php')) {
 		wp_enqueue_script( 'topaz-house-directions', get_template_directory_uri() . '/js/map-directions.js', array(), '20150109', true );
 		wp_enqueue_script( 'topaz-house-jquery-ui', get_template_directory_uri() . '/js/jquery-ui.min.js', array(), '20150826', true );
 		wp_enqueue_script( 'topaz-house-lib', get_template_directory_uri() . '/js/validate.min.js', array(), '20150826', true );
 		wp_enqueue_script( 'topaz-house-validate', get_template_directory_uri() . '/js/form-validate.js', array(), '20150826', true );
 	}
-	
+
 	if(is_page_template('page-floor-plans-indiv.php')) {
 		wp_enqueue_script( 'topaz-house-lightbox-min', get_template_directory_uri() . '/js/imagelightbox.min.js', array('jquery'), '20150827', true );
 		wp_enqueue_script( 'topaz-house-lightbox', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), '20150827', true );
@@ -185,6 +185,9 @@ function topaz_house_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// wp_register_script( 'topaz-house-cookies', get_template_directory_uri() . '/js/jquery.cookie.min.js', array('jquery'), '20160711', true );
+	wp_enqueue_script( 'topaz-house-modal', get_template_directory_uri() . '/js/modal.js', array('jquery'), '20160711', true );
 }
 add_action( 'wp_enqueue_scripts', 'topaz_house_scripts' );
 
@@ -218,7 +221,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 /**
  * REQUIRE/RECOMMEND PLUGINS
@@ -277,7 +280,7 @@ function donaldson_group_register_required_plugins() {
  */
 
 function topaz_house_create_custom_posts() {
-	register_post_type( 'specials', 
+	register_post_type( 'specials',
 		array(
 			'labels' => array(
 				'name' => __( 'Specials' ),
@@ -292,7 +295,7 @@ function topaz_house_create_custom_posts() {
 			'has_archive' => false
 		)
 	);
-	register_post_type( 'home-page-highlights', 
+	register_post_type( 'home-page-highlights',
 		array(
 			'labels' => array(
 				'name' => __( 'Home Page Highlights' ),
@@ -307,7 +310,7 @@ function topaz_house_create_custom_posts() {
 			'has_archive' => false
 		)
 	);
-	register_post_type( 'landmarks', 
+	register_post_type( 'landmarks',
 		array(
 			'labels' => array(
 				'name' => __( 'Area Landmarks' ),
@@ -378,9 +381,9 @@ function topaz_house_floor_plans_subnav() {
 		'post_type' => array( 'page' ),
 		'order' => 'ASC'
 	);
-	
+
 	$myquery = new WP_Query( $args );
-	
+
 	if ( $myquery->have_posts() ) { ?>
 		<nav class="subnav">
 			<ul>
@@ -393,7 +396,7 @@ function topaz_house_floor_plans_subnav() {
 	<?php } else {
 		echo 'No Floor Plans Found!!';
 	}
-	
+
 	wp_reset_postdata();
 }
 
@@ -405,7 +408,7 @@ function topaz_house_community_map_tax_listing() {
 		$tax_terms = get_terms($tax);
 		$cats = array();
 		if ($tax_terms) {
-			foreach ($tax_terms  as $tax_term) {	
+			foreach ($tax_terms  as $tax_term) {
 				$name = $tax_term->name;
 				$slug = $tax_term->slug;
 				$desc = $tax_term-> description;
@@ -416,14 +419,14 @@ function topaz_house_community_map_tax_listing() {
 		}
 		//echo json_encode($cats);
 		//print_r($cats);
-		
+
 		$args=array(
 			'post_type' => $post_type,
 			'post_status' => 'publish',
 			'posts_per_page' => -1,
 			'caller_get_posts'=> 1
 		);
-		
+
 		$poi = array();
 		$my_query = null;
 		$my_query = new WP_Query($args);
