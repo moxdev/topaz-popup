@@ -6,6 +6,7 @@ jQuery('.close-modal').click(function(){
     return false;
 });
 
+
 // jQuery(document).keyup(function(e) {
 //      if (e.keyCode == 27) { // escape key maps to keycode `27`
 //         jQuery('.home-modal').removeClass('open');
@@ -35,11 +36,41 @@ jQuery('.close-modal').click(function(){
 
 //comment out when cookies are active
 jQuery(window).load(function() {
- jQuery('.home-modal').css('z-index', 9999);
- setTimeout(function(){
-   jQuery('.home-modal').addClass('open');
- }, 500);
+    jQuery('.home-modal').css('z-index', 9999);
+
+    setTimeout(function(){
+        jQuery('.form-error').hide();
+        jQuery('.home-modal').addClass('open');
+    }, 500);
+
+    jQuery("#tour-form").submit(function(event) {
+
+        var form = jQuery("#tour-form").serialize();
+
+        jQuery.ajax({
+            type: 'POST',
+            url: 'http://localhost:3000/topaz/wp-content/themes/topaz-house/form.php',
+            data: form,
+            success: function() {
+               jQuery('.home-modal').html("<div id='submit-message-container'></div>");
+               jQuery('#submit-message-container').append("<h3>Your Request Was Received!</h3>").append("<img src='http://localhost:3000/topaz/wp-content/themes/topaz-house/imgs/checkmark.svg' />").append("<p>Someone from our leasing office will contact you soon.</p>").hide().fadeIn(1000);
+            },
+            error: function(data){
+                console.log(data);
+            }
+        })
+        .done(function(data) {
+            console.log(data);
+        })
+        .fail(function(data) {
+            console.log('failed');
+        })
+        event.preventDefault();
+
+    });
 });
+
+
 
 // enque the scripts
 //wp_enqueue_script( 'topaz-house-cookies', '/js/modal-window.js', array('topaz-house-cookies'), '', true );

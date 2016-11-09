@@ -19,10 +19,7 @@
 			<?php wp_nav_menu( array( 'menu_id' => 'footer-menu', 'container' => '' ) ); ?>
 			</nav>
 			<div class="ftr-icons">
-				<div id="walkscore">
-					<a onclick="ga('send', 'event', 'Walk Score', 'Link', 'Walk Score Link Click');" target="_blank" href="https://www.walkscore.com/score/-4400-East.dash.West-Highway-Bethesda-MD-20814-?utm_source=badge&utm_medium=responsive&utm_campaign=badge"><!--[if lte IE 8]><img src="//pp.walk.sc/badge/walk/-4400-East.dash.West-Highway-Bethesda-MD-20814-.png" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 30.666667%; background: none; border: 0;' alt="Walk Score of 4400 East-West Highway Bethesda MD 20814"><![endif]--> <!--[if gt IE 8]><img src="//pp.walk.sc/badge/walk/-4400-East.dash.West-Highway-Bethesda-MD-20814-.svg" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 30.666667%; background: none; border: 0;' alt="Walkable Bethesda Maryland Apartments - Walk Score of 4400 East-West Highway Bethesda MD 20814"><![endif]--> <!--[if !IE]> <!-- --><img src="//pp.walk.sc/badge/walk/-4400-East.dash.West-Highway-Bethesda-MD-20814-.svg" alt="Bethesda Maryland Apartments Walk Score of 4400 East-West Highway Bethesda MD 20814"><!-- <![endif]--></a>
-					<img style="visibility: hidden;" width=1 height=1 src="https://www.redfin.com/rift?ev=external_web&p=walkscore&s=score_badge&a=impression" alt="hidden pixel" />
-				</div>
+
 				<img id="apt-ratings" src="<?php echo get_template_directory_uri()  . '/imgs/AR-TopRated-v2-150px-2013.gif'; ?>" alt="Apartment Ratings Top Rated: 2013">
 				<span id="eho">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
@@ -237,27 +234,38 @@ Leasing Office Hours: Monday - Saturday 10am - 4pm</div><!-- .site-info -->
         	<h4>*Restrictions Apply. Contact leasing office for further information.</h4> <!-- opensanslight-->
       	</div>
       	<div class="modal-footer">
-      		<section id="form">
+      		<section id="request-form-section">
       		    <h2 id="request-header"><span>request a tour:</span></h2>
       		    <form id="tour-form" method="post" action="form.php">
+
       		        <div id="name-wrapper">
       		            <label for="name" class="required">* name</label>
-      		            <input id="name" name="name" type="text">
+      		            <input id="name" name="name" type="text" required>
+      		            <label class="form-error" for="name" id="name_error">This field is required.</label>
       		        </div>
+
       		        <div id="email-wrapper">
       		            <label for="email" class="required">* email</label>
-      		            <input id="email" name="email" type="email" spellcheck="true">
+      		            <input id="email" name="email" type="email" spellcheck="true" required>
+      		            <label class="form-error" for="email" id="email_error">This field is required.</label>
       		        </div>
+
       		        <div id="phone-number-wrapper">
-      		            <label for="phone-number" class="required">* phone number</label>
-      		            <input id="phone-number" name="phone-number" type="tel">
+      		            <label for="phone" class="required">* phone number</label>
+      		            <input id="phone" name="phone" type="tel" required>
+      		            <label class="form-error" for="phone" id="phone_error">This field is required.</label>
       		        </div>
+
       		        <label for="spam" class="honey">What is two plus two?</label>
       		        <input name="spam" type="text" size="4" id="spam" maxlength="4" class="honey">
+
       		        <div class="error-box"></div>
-      		        <div class="buttonHolder">
+
+      		        <div class="button-wrapper">
       		            <input id="submit-request" name="submit-request" type="submit"  value="Submit">
       		        </div>
+
+      		        <div class="success-message"></div>
       		    </form>
       		</section>
       		<div class="equal-housing">

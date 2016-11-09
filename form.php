@@ -33,12 +33,21 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
 
     $name=$_POST["name"];
     $email=$_POST["email"];
-    $phoneNumber=$_POST["phone-number"];
+    $phone=$_POST["phone"];
 
     $from="shane@mm4solutions.com";
     $subject="I would like information about Topaz House specials";
-    $message="Name: ".$name."<br>"."Email: ".$email."<br>"."Phone Number: ".$phoneNumber;
+    $message="Name: ".$name."<br>"."Email: ".$email."<br>"."Phone Number: ".$phone;
     $header='From: '.$from."\r\n".'Reply-To: '.$from."\r\n".'MIME-Version: 1.0'."\r\n".'Content-type: text/html; charser=iso-8859-1'."\r\n".'X-Mailer: PHP/'.phpversion();
     @mail($to,$subject,$message,$header);
 }
+
+// if( mail($to,$subject,$message,$header) )
+//    {
+//        echo "<h2>Someone will contact you</h2>";
+//    }
+//    else
+//    {
+//        echo "<h2>Sorry, there has been an error</h2>";
+//    }
 ?>
