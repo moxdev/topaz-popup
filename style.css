@@ -3531,45 +3531,40 @@ html[xmlns] .slides {display: block;}
   max-width: 600px;
   margin:10% auto;
   background-color: #41414c;
-  /*background-size: 75% auto;*/
-  /*background-position: right top;*/
   background-repeat: no-repeat;
   color: #FFF;
   position: relative;
-  /*overflow: hidden;*/
   box-shadow: 0 0 7px 7px rgba(0, 0, 0, .2);
 }
 
 .home-modal > div > div {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2em;
-  margin-bottom: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .home-modal svg {
 	width: 50%;
+	margin-top: 10px;
 }
 
 .home-modal h1 {
   font-family: 'bebas_neueregular';
-  font-size: 96px;
   color: #ffc83b;
-  margin: 0;
+  font-size: 2.5em;
 }
 
 .home-modal p {
   font-family: 'open_sanssemibold';
   color: #fff;
-  font-size: 31px;
-  margin: 0 .3em .5em;
+  padding: 0 10px;
 }
 
 .home-modal h4 {
 	font-family: 'open_sanslight';
 	color: #fff;
-	font-size: 14px;
-
+	font-size: 12px;
 }
 
 .home-modal .modal-footer {
@@ -3578,15 +3573,14 @@ html[xmlns] .slides {display: block;}
 }
 
 .home-modal form {
-	display: inline-block;
-	width: 85%;
+    display: inline-block;
+    width: 100%;
 }
 
 .home-modal form input[type="text"],
 .home-modal form input[type="email"],
 .home-modal form input[type="tel"] {
 	border: none;
-	/*color: #41414c !important;*/
 	border-radius: 0;
 	height: 35px;
 }
@@ -3596,16 +3590,14 @@ html[xmlns] .slides {display: block;}
 }
 .home-modal #request-header {
 	text-align: left;
-	font-size:28px;
 	color:#41414c;
-	margin-left: 42px;
 }
 .home-modal label {
 	text-transform: uppercase;
 	font-family: 'GandhiSans-Bold';
 	color:#41414c;
-	font-size: 14px;
 	margin-bottom: 10px;
+	font-size: 12px;
 }
 .home-modal .modal-footer .button-wrapper {
 	text-align: center;
@@ -3616,9 +3608,7 @@ html[xmlns] .slides {display: block;}
 	color:#41414c;
 	width: 100%;
 	font-family:'bebas_neueregular';
-	font-size: 20px;
-	padding: 10px;
-	margin-top: 20px;
+	font-size: 16px;
 }
 
 .home-modal .modal-footer .equal-housing {
@@ -3641,31 +3631,63 @@ html[xmlns] .slides {display: block;}
 }
 
 #submit-message-container {
-	height: 600px;
+	height: 550px;
 }
 
 #submit-message-container h3 {
 	color: #ffc83b;
-	padding: 0;
-	margin: .5em 0;
-	font-size: 3em;
-}
-
-#submit-message-container p {
-	font-size: 1.5em;
-	padding: 1em 1.5em;
 }
 
 #submit-message-container img {
 	width: 10%;
 }
 
-@media screen and (min-width:550px) {
-}
+@media screen and (min-width:650px) {
+   .home-modal > div {
+   	margin:5% auto;
+   }
 
-@media screen and (min-width:750px) {
-  .home-modal > div {
-    margin:5% auto;
+  .home-modal h1 {
+      font-size: 96px;
+      margin: 0;
   }
 
+  .home-modal p {
+      font-size: 31px;
+      margin: 0 .3em .5em;
+  }
+
+  .home-modal h4 {
+      font-size: 14px;
+  }
+
+  .home-modal form {
+      width: 85%;
+  }
+
+  .home-modal #request-header {
+      font-size:28px;
+      margin-left: 42px;
+  }
+
+  .home-modal label {
+      font-size: 14px;
+  }
+
+  .home-modal .modal-footer .button-wrapper #submit-request {
+      font-size: 20px;
+      padding: 10px;
+      margin-top: 20px;
+  }
+
+  #submit-message-container h3 {
+      padding: 0;
+      margin: .5em 0;
+      font-size: 3em;
+  }
+
+  #submit-message-container p {
+      font-size: 1.5em;
+      padding: 1em 1.5em;
+  }
 }
