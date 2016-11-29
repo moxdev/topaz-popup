@@ -237,17 +237,17 @@ Leasing Office Hours: Monday - Saturday 10am - 4pm</div><!-- .site-info -->
 
       		        <div id="name-wrapper">
       		            <label for="name" class="required">* name</label>
-      		            <input id="name" name="name" type="text" >
+      		            <input id="name" name="name" type="text" required>
       		        </div>
 
       		        <div id="email-wrapper">
       		            <label for="email" class="required">* email</label>
-      		            <input id="email" name="email" type="email" spellcheck="true" >
+      		            <input id="email" name="email" type="email" spellcheck="true" required>
       		        </div>
 
       		        <div id="phone-number-wrapper">
       		            <label for="phone" class="required">* phone number</label>
-      		            <input id="phone" name="phone" type="tel" >
+      		            <input id="phone" name="phone" type="tel" required>
       		        </div>
 
       		        <label for="spam" class="honey">What is two plus two?</label>
