@@ -186,8 +186,8 @@ function topaz_house_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	// wp_register_script( 'topaz-house-cookies', get_template_directory_uri() . '/js/jquery.cookie.min.js', array('jquery'), '20160711', true );
-	wp_enqueue_script( 'topaz-house-modal', get_template_directory_uri() . '/js/modal.js', array('jquery'), '20160711', true );
+	wp_enqueue_script( 'topaz-house-cookies', get_template_directory_uri() . '/js/jquery.cookie.min.js', array('jquery'), '20160711', true );
+	wp_enqueue_script( 'topaz-house-modal', get_template_directory_uri() . '/js/modal.js', array('topaz-house-cookies'), '20160711', true );
 }
 add_action( 'wp_enqueue_scripts', 'topaz_house_scripts' );
 

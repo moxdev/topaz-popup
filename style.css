@@ -3507,7 +3507,7 @@ html[xmlns] .slides {display: block;}
 --------------------------------------------------------------*/
 
 .home-modal {
-  /*display: none;*/ /*display none for testing on live site*/
+  display: none; /*display none for testing on live site*/
   font-family: 'open_sanssemibold';
   position: fixed;
   left: 0;
